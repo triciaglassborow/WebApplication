@@ -1,0 +1,33 @@
+﻿@page
+@model WebApplication1.Pages.ConverterModel
+@{
+    ViewData["Title"] = "Converter";
+}
+<div class="content">
+    <div class="heading">
+        <p>Converter</p>
+    </div>
+
+    <div class="main">
+        <p style="font-size: larger">
+            Enter and ammount to be converted from GBP to Euros
+        </p>
+        <div class="centre">
+            <form method="POST">
+                <!-- Input Box -->
+                <div class="group">
+                    <input asp-for="input"placeholder="£0.00" />
+                    <!-- Button -->
+                    <input type="Submit" />
+                </div>
+            </form>
+        </div>
+        <!-- Result -->
+        <p style="font-size: larger">
+            @this.Model.result
+        </p>
+        
+    </div>
+</div>
+
+

@@ -1,0 +1,40 @@
+﻿@page
+@model WebApplication1.Pages.HelloworldModel
+@{
+    ViewData["Title"] = "HelloWorld";
+}
+
+<div class="content">
+    <div class="heading">
+        <p>Hello World</p>
+        <p style="font-size: large">The time on the server is @DateTime.Now</p>
+    </div>
+
+    <div class="main">
+        <p style="font-size: larger">
+            Enter your name
+        </p>
+
+        <div class="centre">
+            <form method="POST">
+                <div class="group">
+                    <!-- Input box -->
+                    <input asp-for="name" placeholder="Your Name" />
+                    <input type="Submit" />
+                </div>
+            </form>
+
+        </div>
+        <!-- Output -->
+        <p style="font-size: larger">
+            @this.Model.result
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+

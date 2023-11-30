@@ -1,0 +1,36 @@
+html {
+    font-size: 14px;
+    font-family: Arial;
+}
+.centre {
+    margin: auto;
+    width: min-content;
+}
+.group {
+    width: max-content;
+    display: inline-block;
+
+}
+.content {
+    margin: auto;
+    width: 70%;
+
+}
+.heading {
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font: bolder;
+
+}
+.main {
+    padding: 5px;
+    margin: auto;
+    width: 50%;
+
+}
+
+
+body {
+  margin-bottom: 60px;
+}
